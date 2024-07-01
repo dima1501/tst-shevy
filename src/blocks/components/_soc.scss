@@ -1,0 +1,9 @@
+.soc {
+    display: flex;
+    gap: 32px;
+
+    &__link-icon {
+        width: 24px;
+        height: 24px;
+    }
+}

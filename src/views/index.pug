@@ -5,8 +5,13 @@ block variables
 	- const title = "gulp-pug-starter"
 
 block content
-	include ../blocks/modules/header/header
-	include ../blocks/modules/footer/footer
+	include ../blocks/modules/welcome/welcome
+	include ../blocks/modules/projects/projects
+	include ../blocks/modules/faq/faq
+
+	+popup('example-popup', 'Наш специалист ответит на все ваши вопросы')
+		include ../blocks/modules/form/form
+		
 
 block scripts
 	script(src="js/vendor.js")

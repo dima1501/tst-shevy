@@ -1,0 +1,14 @@
+mixin popup(id, title)
+	.popup(id=id)
+		.popup__inner
+			.popup__header
+				.popup__logo
+					img(src="./img/svg/project-logo-white.svg", alt="flex", width="122", height="34")
+
+				button.popup__close.js-popup-close(type='button')
+					svg.popup__close-icon
+						use(xlink:href="img/sprites/sprite.svg#closer")
+
+			.popup__body
+				h4.popup__title= title
+				block

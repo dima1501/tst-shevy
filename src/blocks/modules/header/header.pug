@@ -1,0 +1,29 @@
+header.header
+    .container
+        .header__inner
+            a(href="#").header__logo
+                img(src="./img/svg/project-logo.svg", alt="flex", width="122", height="34")
+
+            .header__menu.js-header-menu
+                button.header__closer.js-header-closer(aria-label="Закрыть меню")
+                    svg.header__closer-icon
+                        use(xlink:href="img/sprites/sprite.svg#closer")
+
+                a(href="#").header__inner-logo
+                    img(src="./img/svg/project-logo-white.svg", alt="flex", width="122", height="34")
+
+                nav.header__nav 
+                    a(href="").header__nav-link Наши проекты
+                    a(href="").header__nav-link О компании
+                    a(href="").header__nav-link Контакты
+
+                a(href="tel: +7 (812) 800-20-30" aria-label="Позвонить нам").header__phone 
+                    svg.header__phone-icon
+                        use(xlink:href="img/sprites/sprite.svg#phone-forwarded")
+                    | +7 (812) 800-20-30
+
+            button.header__burger.js-header-opener(aria-label="Открыть меню")
+                .header__burger-bar
+                .header__burger-bar
+                .header__burger-bar
+                

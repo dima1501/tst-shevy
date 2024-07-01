@@ -1,0 +1,31 @@
+section.section 
+    .welcome
+        .welcome__main
+            .welcome__content
+                h1.welcome__content-title Lorem Ipsum используют один и тот же текст
+                p.welcome__content-text Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений
+                .welcome__content-btn 
+                    button(data-target="#example-popup" aria-label="Оставить заявку").button.button--primary.js-popup-open Оставить заявку
+            
+            picture.welcome__pic
+                source(type="image/webp" srcset="./img/welcome-pic.webp 1x, ./img/welcome-pic@2x.webp 2x")
+                source(type="image/jpeg" srcset="./img/welcome-pic.jpg 1x, ./img/welcome-pic@2x.jpg 2x")
+                img(src="./img/welcome-pic.jpg", alt="Описание изображения", width="588", height="550")
+
+        .welcome__sub
+            p.welcome__sub-text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. 
+
+            .welcome__features
+                .welcome__feature
+                    h3(data-value="2012").welcome__feature-title.js-counter 0
+                    p.welcome__feature-text Lorem Ipsum
+
+                .welcome__feature
+                    h3(data-value="93").welcome__feature-title.js-counter 0
+                    p.welcome__feature-text Приемлемые модификации
+
+                .welcome__feature.welcome__feature--wide
+                    h3.welcome__feature-title 
+                        span(data-value="150").js-counter 0
+                        | +
+                    p.welcome__feature-text Набор моделей предложений

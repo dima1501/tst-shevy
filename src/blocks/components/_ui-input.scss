@@ -1,0 +1,22 @@
+.ui-input {
+    color: var(--Colors-Dark-1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.28px;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+        color: var(--Colors-Dark-3);
+        opacity: 1;
+    }
+
+    &::-ms-input-placeholder {
+        color: var(--Colors-Dark-3);
+    }
+
+    @include tablet {
+        font-size: 16px;
+    }
+}

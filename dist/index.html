@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-pug-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner"><a class="header__logo" href="#"><img src="./img/svg/project-logo.svg" alt="flex" width="122" height="34"></a>
+          <div class="header__menu js-header-menu">
+            <button class="header__closer js-header-closer" aria-label="Закрыть меню">
+              <svg class="header__closer-icon">
+                <use xlink:href="img/sprites/sprite.svg#closer"></use>
+              </svg>
+            </button><a class="header__inner-logo" href="#"><img src="./img/svg/project-logo-white.svg" alt="flex" width="122" height="34"></a>
+            <nav class="header__nav"> <a class="header__nav-link" href="">Наши проекты</a><a class="header__nav-link" href="">О компании</a><a class="header__nav-link" href="">Контакты</a></nav><a class="header__phone" href="tel: +7 (812) 800-20-30" aria-label="Позвонить нам"> 
+              <svg class="header__phone-icon">
+                <use xlink:href="img/sprites/sprite.svg#phone-forwarded"></use>
+              </svg>+7 (812) 800-20-30</a>
+          </div>
+          <button class="header__burger js-header-opener" aria-label="Открыть меню">
+            <div class="header__burger-bar"></div>
+            <div class="header__burger-bar"></div>
+            <div class="header__burger-bar"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <div class="container">
+        <section class="section"> 
+          <div class="welcome">
+            <div class="welcome__main">
+              <div class="welcome__content">
+                <h1 class="welcome__content-title">Lorem Ipsum используют один и тот же текст</h1>
+                <p class="welcome__content-text">Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений</p>
+                <div class="welcome__content-btn"> 
+                  <button class="button button--primary js-popup-open" data-target="#example-popup" aria-label="Оставить заявку">Оставить заявку</button>
+                </div>
+              </div>
+              <picture class="welcome__pic">
+                <source type="image/webp" srcset="./img/welcome-pic.webp 1x, ./img/welcome-pic@2x.webp 2x">
+                <source type="image/jpeg" srcset="./img/welcome-pic.jpg 1x, ./img/welcome-pic@2x.jpg 2x"><img src="./img/welcome-pic.jpg" alt="Описание изображения" width="588" height="550">
+              </picture>
+            </div>
+            <div class="welcome__sub">
+              <p class="welcome__sub-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. </p>
+              <div class="welcome__features">
+                <div class="welcome__feature">
+                  <h3 class="welcome__feature-title js-counter" data-value="2012">0</h3>
+                  <p class="welcome__feature-text">Lorem Ipsum</p>
+                </div>
+                <div class="welcome__feature">
+                  <h3 class="welcome__feature-title js-counter" data-value="93">0</h3>
+                  <p class="welcome__feature-text">Приемлемые модификации</p>
+                </div>
+                <div class="welcome__feature welcome__feature--wide">
+                  <h3 class="welcome__feature-title"> <span class="js-counter" data-value="150">0</span>+</h3>
+                  <p class="welcome__feature-text">Набор моделей предложений</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">    
+          <h2 class="section__title">Юмористические вставки или слова</h2>
+          <div class="projects glide">
+            <div class="glide__track" data-glide-el="track">
+              <div class="glide__slides projects__slides">
+                <div class="glide__slide">
+                  <div class="projects-card"><a class="projects-card__tag" href="#tag">#tag</a><a class="projects-card__link" href="#">
+                      <div class="projects-card__image">
+                        <picture class="projects-card__pic">
+                          <source type="image/webp" srcset="./img/project-1.webp 1x, ./img/project-1@2x.webp 2x">
+                          <source type="image/jpeg" srcset="./img/project-1.jpg 1x, ./img/project-1@2x.jpg 2x"><img src="./img/project-1.jpg" alt="Описание изображения" width="384" height="248">
+                        </picture>
+                      </div>
+                      <h4 class="projects-card__title">оценка дизайна</h4></a>
+                    <p class="projects-card__text">За прошедшие годы текст Lorem Ipsum получил много версий</p>
+                  </div>
+                </div>
+                <div class="glide__slide">
+                  <div class="projects-card"><a class="projects-card__tag" href="#tag">#tag</a><a class="projects-card__link" href="#">
+                      <div class="projects-card__image">
+                        <picture class="projects-card__pic">
+                          <source type="image/webp" srcset="./img/project-2.webp 1x, ./img/project-2@2x.webp 2x">
+                          <source type="image/jpeg" srcset="./img/project-2.jpg 1x, ./img/project-2@2x.jpg 2x"><img src="./img/project-2.jpg" alt="Описание изображения" width="384" height="248">
+                        </picture>
+                      </div>
+                      <h4 class="projects-card__title">Lorem Ipsum в качестве текста по умолчанию</h4></a>
+                    <p class="projects-card__text">Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию</p>
+                  </div>
+                </div>
+                <div class="glide__slide">
+                  <div class="projects-card"><a class="projects-card__tag" href="#tag">#tag</a><a class="projects-card__link" href="#">
+                      <div class="projects-card__image">
+                        <picture class="projects-card__pic">
+                          <source type="image/webp" srcset="./img/project-3.webp 1x, ./img/project-3@2x.webp 2x">
+                          <source type="image/jpeg" srcset="./img/project-3.jpg 1x, ./img/project-3@2x.jpg 2x"><img src="./img/project-3.jpg" alt="Описание изображения" width="384" height="248">
+                        </picture>
+                      </div>
+                      <h4 class="projects-card__title">Почему он используется?</h4></a>
+                    <p class="projects-card__text">Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. </p>
+                  </div>
+                </div>
+                <div class="glide__slide">
+                  <div class="projects-card"><a class="projects-card__tag" href="#tag">#tag</a><a class="projects-card__link" href="#">
+                      <div class="projects-card__image">
+                        <picture class="projects-card__pic">
+                          <source type="image/webp" srcset="./img/project-1.webp 1x, ./img/project-1@2x.webp 2x">
+                          <source type="image/jpeg" srcset="./img/project-1.jpg 1x, ./img/project-1@2x.jpg 2x"><img src="./img/project-1.jpg" alt="Описание изображения" width="384" height="248">
+                        </picture>
+                      </div>
+                      <h4 class="projects-card__title">Также все другие известные генераторы </h4></a>
+                    <p class="projects-card__text">Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects__bullets" data-glide-el="controls[nav]">
+              <button class="projects__bullet" data-glide-dir="=0"></button>
+              <button class="projects__bullet" data-glide-dir="=1"></button>
+              <button class="projects__bullet" data-glide-dir="=2"></button>
+              <button class="projects__bullet" data-glide-dir="=3"></button>
+            </div>
+          </div>
+        </section>
+        <section class="section"> 
+          <h2 class="section__title">Вопросы и ответы</h2>
+          <div class="faq"> 
+            <div class="faq__item js-question">
+              <div class="faq__item-top js-question-toggle">
+                <h4 class="faq__item-title">Где его взять?</h4>
+                <div class="faq__item-opener">
+                  <svg class="faq__item-opener-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                  </svg>
+                  <svg class="faq__item-opener-icon _active">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus-dark"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-answer"> 
+                <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+              </div>
+            </div>
+            <div class="faq__item js-question">
+              <div class="faq__item-top js-question-toggle">
+                <h4 class="faq__item-title">Абзац 1.10.33 "de Finibus Bonorum et Malorum", написанный Цицероном в 45 году н.э</h4>
+                <div class="faq__item-opener">
+                  <svg class="faq__item-opener-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                  </svg>
+                  <svg class="faq__item-opener-icon _active">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus-dark"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-answer"> 
+                <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+              </div>
+            </div>
+            <div class="faq__item js-question">
+              <div class="faq__item-top js-question-toggle">
+                <h4 class="faq__item-title">Почему он используется?</h4>
+                <div class="faq__item-opener">
+                  <svg class="faq__item-opener-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                  </svg>
+                  <svg class="faq__item-opener-icon _active">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus-dark"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-answer"> 
+                <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+              </div>
+            </div>
+            <div class="faq__item js-question">
+              <div class="faq__item-top js-question-toggle">
+                <h4 class="faq__item-title">Английский перевод 1914 года, H. Rackham</h4>
+                <div class="faq__item-opener">
+                  <svg class="faq__item-opener-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                  </svg>
+                  <svg class="faq__item-opener-icon _active">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus-dark"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-answer"> 
+                <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+              </div>
+            </div>
+            <div class="faq__item js-question">
+              <div class="faq__item-top js-question-toggle">
+                <h4 class="faq__item-title">классический текст Lorem Ipsum, используемый с XVI века</h4>
+                <div class="faq__item-opener">
+                  <svg class="faq__item-opener-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus"></use>
+                  </svg>
+                  <svg class="faq__item-opener-icon _active">
+                    <use xlink:href="./img/sprites/sprite.svg#icon-plus-dark"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__item-answer"> 
+                <p> Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="popup" id="example-popup">
+          <div class="popup__inner">
+            <div class="popup__header">
+              <div class="popup__logo"><img src="./img/svg/project-logo-white.svg" alt="flex" width="122" height="34"/></div>
+              <button class="popup__close js-popup-close" type="button">
+                <svg class="popup__close-icon">
+                  <use xlink:href="img/sprites/sprite.svg#closer"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="popup__body">
+              <h4 class="popup__title">Наш специалист ответит на все ваши вопросы</h4>
+              <form class="form js-form" action="">
+                <div class="form__line">
+                  <input class="ui-input js-form-field" type="text" name="name" id="name" placeholder="Ваше Имя" required>
+                </div>
+                <div class="form__line">
+                  <input class="ui-input js-form-field js-number" type="text" name="number" id="number" placeholder="Введите ваш номер" required>
+                </div>
+                <div class="form__footer">
+                  <button class="button button--primary button--large js-submit">Отправить</button>
+                  <p class="form__note"> Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__inner">
+          <div class="footer__main"><a class="footer__logo" href="#"><img src="./img/svg/project-logo-white.svg" alt="flex" width="122" height="34"></a>
+            <p class="footer__text">Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений</p>
+            <div class="soc"><a class="soc__link" href="#" aria-label="facebook">
+                <svg class="soc__link-icon">
+                  <use xlink:href="img/sprites/sprite.svg#logo-facebook" target="_blank"></use>
+                </svg></a><a class="soc-link" href="#" aria-label="twitter">
+                <svg class="soc__link-icon">
+                  <use xlink:href="img/sprites/sprite.svg#logo-twitter" target="_blank"></use>
+                </svg></a><a class="soc-link" href="#" aria-label="instagram">
+                <svg class="soc__link-icon">
+                  <use xlink:href="img/sprites/sprite.svg#logo-instagram" target="_blank"></use>
+                </svg></a><a class="soc-link" href="#" aria-label="github">
+                <svg class="soc__link-icon">
+                  <use xlink:href="img/sprites/sprite.svg#logo-github" target="_blank"></use>
+                </svg></a></div>
+          </div>
+          <div class="footer__contacts">
+            <h4 class="footer__title">Контакты</h4>
+            <p class="footer__text">Санкт-Петербург, ул. Ленина, д. 160</p><a class="footer__link" href="tel: +7 (812) 800-20-30">+7 (812) 800-20-30</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
